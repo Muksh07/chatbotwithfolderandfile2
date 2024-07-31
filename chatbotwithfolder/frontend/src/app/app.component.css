@@ -1,0 +1,133 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  color: white;
+  background-color: black;
+}
+
+/* Three equal parts with borders */
+.part {
+  flex: 1;
+  padding: 0;
+  overflow-y: auto;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+
+/* Chatbot */
+.chatbot-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: white;
+  background-color: gray;
+}
+
+
+.messages-container {
+  overflow-y: auto;
+  flex-grow: 1;
+  background-color: gray;
+}
+
+.user-message {
+  background-color: gray;
+  margin: 2px;
+  color: white;
+  border-radius: 5px;
+  max-width: 60%;
+  align-self: flex-end;
+}
+
+
+.bot-message {
+  background-color: gray;
+  margin: 2px;
+  border-radius: 5px;
+  max-width: 60%;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+.custom-input::placeholder {
+  color: white; /* Change the placeholder text color to white */
+}
+
+.custom-input:focus {
+  border-color: black; /* Change the border color on focus */
+  box-shadow: none; /* Remove the default shadow */
+}
+
+.form-control {
+  box-shadow: none;
+  border-color: black;
+  background-color: gray;
+  color: white;
+}
+
+.btn-primary-custom {
+  border: none;
+  color: black;
+  background-color: white;
+}
+
+/* Folder Structure and File Content */
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+ul li {
+  position: relative;
+  padding-left: 20px;
+}
+
+ul li::before {
+  position: absolute;
+  left: 0;
+  content: '>';
+  color: white;
+}
+
+ul li.file::before {
+  content: '-';
+  color: white;
+}
+
+/* Fix "Generated Folder Structure" and "File Content" headings */
+.folder-structure-header, .file-content h3 {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  padding: 10px;
+  margin-top: 0;
+  z-index: 1; /* Ensure it's above the scrollable content */
+}
+
+/* Adjustments for "File Content" section */
+.file-content {
+  margin-top: 0px; 
+}
+
+
+.explanation {
+  color: white;
+  margin-top: 10px;
+}
+
+.code-block {
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  overflow-x: auto;
+  font-family: inherit;
+  margin-bottom: 10px;
+}
+
+.explanation-block {
+  color: white;
+  margin-top: 10px;
+}
+
